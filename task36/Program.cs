@@ -5,13 +5,11 @@
 
 
 int[] array = new int[4];
-int sum = 0;
-
 for (int i = 0; i < array.Length; i++)
 {
   array[i] = new Random().Next(-99, 100);
   Console.Write(array[i] + "\t");
-  if (array[i] % 2 == 1) sum += array[i];
 }
-System.Console.WriteLine();
-System.Console.WriteLine($"Сумма нечетных чисел равна: {sum}");
+Console.WriteLine();
+Console.WriteLine($"Сумма чисел {array[1]} и {array[3]} равна: {array[1] + array[3]} ");
+Console.ReadKey();
